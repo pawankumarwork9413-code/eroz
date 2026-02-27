@@ -5,9 +5,7 @@ const cameraPickBtn = document.getElementById('cameraPickBtn');
 const analyzeBtn = document.getElementById('analyzeBtn');
 const resultDiv = document.getElementById('result');
 let selectedFile = null;
-const OPENAI_API_KEY = "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" 
-;
-
+const OPENAI_API_KEY = "";
 function fileToDataUrl(file) {
     return new Promise((resolve, reject) => {
         const reader = new FileReader();
