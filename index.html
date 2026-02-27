@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eroz Nutrition Analyzer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-orb orb-3"></div>
+
+    <main class="page-shell">
+        <section class="hero-layout">
+            <div class="hero-copy reveal">
+                <p class="chip">Smart Food Lens</p>
+                <h1>Eroz Nutrition Analyzer</h1>
+                <p class="subtitle">Upload any food photo and get instant nutrition estimates with a polished, real-time experience.</p>
+                <div class="stats-row">
+                    <div class="stat-card">
+                        <span class="stat-value">1 Tap</span>
+                        <span class="stat-label">Image Upload</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">AI Vision</span>
+                        <span class="stat-label">Nutrition Estimate</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">Live</span>
+                        <span class="stat-label">Result Rendering</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="analyzer-card reveal delay">
+                <div class="preview-wrap">
+                    <img id="preview" src="https://img.icons8.com/fluency/240/meal.png" alt="Food preview" />
+                    <button id="cameraPickBtn" class="camera-btn" type="button" aria-label="Choose food image">
+                        <svg viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M9 4L7.8 6H5a3 3 0 00-3 3v8a3 3 0 003 3h14a3 3 0 003-3V9a3 3 0 00-3-3h-2.8L15 4H9zm3 5.2A4.8 4.8 0 1112 19a4.8 4.8 0 010-9.8zm0 2A2.8 2.8 0 1012 17a2.8 2.8 0 000-5.8z"></path>
+                        </svg>
+                    </button>
+                    <input type="file" id="imageInput" accept="image/*" capture="environment" hidden />
+                </div>
+                <button id="analyzeBtn" disabled>Analyze Nutrition</button>
+                <p class="hint-text">Use the camera icon to pick an image</p>
+                <div id="result" class="result" aria-live="polite"></div>
+            </div>
+        </section>
+
+        <section class="feature-grid reveal">
+            <article class="feature-card">
+                <h2>Fast</h2>
+                <p>Image-to-estimate flow optimized for quick decisions.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Clean</h2>
+                <p>Focused UI with smooth motion and responsive behavior.</p>
+            </article>
+            <article class="feature-card">
+                <h2>Practical</h2>
+                <p>Calories, protein, carbs, and fat displayed clearly.</p>
+            </article>
+        </section>
+
+        <footer class="footer">
+            <p>&copy; 2026 Eroz. All rights reserved.</p>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
