@@ -129,17 +129,17 @@ function renderNutritionPanel(values) {
                     <p class="nutrition-label">Calories</p>
                     <p class="nutrition-value">${escapeHtml(values.calories)}</p>
                 </article>
-                // <article class="nutrition-item">
-                //     <p class="nutrition-label">Protein</p>
-                //     <p class="nutrition-value">${escapeHtml(values.protein)}</p>
-                // </article>
-                // <article class="nutrition-item">
-                //     <p class="nutrition-label">Carbs</p>
-                //     <p class="nutrition-value">${escapeHtml(values.carbs)}</p>
-                // </article>
-                // <article class="nutrition-item">
-                //     <p class="nutrition-label">Fat</p>
-                //     <p class="nutrition-value">${escapeHtml(values.fat)}</p>
+                <article class="nutrition-item">
+                    <p class="nutrition-label">Protein</p>
+                    <p class="nutrition-value">${escapeHtml(values.protein)}</p>
+                </article>
+                <article class="nutrition-item">
+                    <p class="nutrition-label">Carbs</p>
+                    <p class="nutrition-value">${escapeHtml(values.carbs)}</p>
+                </article>
+                <article class="nutrition-item">
+                    <p class="nutrition-label">Fat</p>
+                    <p class="nutrition-value">${escapeHtml(values.fat)}</p>
                 </article>
             </div>
             <p class="serving-note">${escapeHtml(values.serving)}</p>
