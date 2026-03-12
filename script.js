@@ -84,10 +84,10 @@ function parseNutrition(rawText) {
         if (jsonLike) {
             return {
                 calories: jsonLike.calories || jsonLike.Calories || '--',
-                protein: jsonLike.protein || jsonLike.Protein || '--',
-                carbs: jsonLike.carbs || jsonLike.Carbs || jsonLike.carbohydrates || '--',
-                fat: jsonLike.fat || jsonLike.Fat || '--',
-                serving: jsonLike.serving || jsonLike.Serving || 'Estimated serving'
+                // protein: jsonLike.protein || jsonLike.Protein || '--',
+                // carbs: jsonLike.carbs || jsonLike.Carbs || jsonLike.carbohydrates || '--',
+                // fat: jsonLike.fat || jsonLike.Fat || '--',
+                // serving: jsonLike.serving || jsonLike.Serving || 'Estimated serving'
             };
         }
 
