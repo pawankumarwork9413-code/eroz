@@ -1,0 +1,1 @@
+{"name": "eroz","version": "1.0.0","description": "","main": "index.js","scripts": {},"repository": {"type": "git","url": "git+https://github.com/pawankumarwork9413-code/eroz.git"},"keywords": [],"author": "","license": "ISC","dependencies": {"express": "^4.17.1","cors": "^2.8.5","dotenv": "^10.0.0","node-fetch": "^2.6.1"}}
