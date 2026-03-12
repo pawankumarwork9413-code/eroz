@@ -84,10 +84,10 @@ function parseNutrition(rawText) {
         if (jsonLike) {
             return {
                 calories: jsonLike.calories || jsonLike.Calories || '--',
-                // protein: jsonLike.protein || jsonLike.Protein || '--',
-                // carbs: jsonLike.carbs || jsonLike.Carbs || jsonLike.carbohydrates || '--',
-                // fat: jsonLike.fat || jsonLike.Fat || '--',
-                // serving: jsonLike.serving || jsonLike.Serving || 'Estimated serving'
+                protein: jsonLike.protein || jsonLike.Protein || '--',
+                carbs: jsonLike.carbs || jsonLike.Carbs || jsonLike.carbohydrates || '--',
+                fat: jsonLike.fat || jsonLike.Fat || '--',
+                serving: jsonLike.serving || jsonLike.Serving || 'Estimated serving'
             };
         }
 
@@ -129,17 +129,17 @@ function renderNutritionPanel(values) {
                     <p class="nutrition-label">Calories</p>
                     <p class="nutrition-value">${escapeHtml(values.calories)}</p>
                 </article>
-                <article class="nutrition-item">
-                    <p class="nutrition-label">Protein</p>
-                    <p class="nutrition-value">${escapeHtml(values.protein)}</p>
-                </article>
-                <article class="nutrition-item">
-                    <p class="nutrition-label">Carbs</p>
-                    <p class="nutrition-value">${escapeHtml(values.carbs)}</p>
-                </article>
-                <article class="nutrition-item">
-                    <p class="nutrition-label">Fat</p>
-                    <p class="nutrition-value">${escapeHtml(values.fat)}</p>
+                // <article class="nutrition-item">
+                //     <p class="nutrition-label">Protein</p>
+                //     <p class="nutrition-value">${escapeHtml(values.protein)}</p>
+                // </article>
+                // <article class="nutrition-item">
+                //     <p class="nutrition-label">Carbs</p>
+                //     <p class="nutrition-value">${escapeHtml(values.carbs)}</p>
+                // </article>
+                // <article class="nutrition-item">
+                //     <p class="nutrition-label">Fat</p>
+                //     <p class="nutrition-value">${escapeHtml(values.fat)}</p>
                 </article>
             </div>
             <p class="serving-note">${escapeHtml(values.serving)}</p>
